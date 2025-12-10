@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+}
+
+.hero {
+  background: linear-gradient(#ff046438, #0011ff42), linear-gradient(to right, #fbff002c, #00ff153a),  url('../../public/Screenshot\ 2025-12-09\ 102917.png');;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1% 5%;
+}
+
+.vs-box {
+  background-color: #ffffff1e;
+  backdrop-filter: blur(20px);
+  border-radius: 75px;
+  color: white;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 80px;
+  padding: 20px 35px;
+  border: 1px solid #ffffff85;
+  border-right: none;
+  border-bottom: none;
+  cursor: pointer;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.vs-bx:hover {
+  background: blur(19px);
+  transform: scale(1.2) translateY(100px);
+  z-index: 4;
+}
+
+.team {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.choose-score-box {
+  
+}
+
+.competitor {
+  margin: 12px 5px;
+  padding: 20px 30px;
+  background: #ffffff00;
+  backdrop-filter: blur(10px);
+  border-radius: 75px;
+  color: white;
+  display: grid;
+  width: 100%;
+  border: 1px solid #ffffff85;
+  border-right: none;
+  border-bottom: none;
+  height: 55vh;
+  overflow-y: scroll;
+  font-family: Manufacturing Consent, system-ui;
+}
+
+.grid-list {
+  list-style: none;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-list img {
+  width: 170px;
+  height: 170px;
+}
+
+li:hover {
+  transform: scale(1.2);
+  background: #00000085;
+  font-size: 30px;
+  z-index: 6;
+}
+
+li {
+  display: flex;
+  padding: 8px;
+  border-radius: 30px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: .5s;
+}
+
+.grid-list p {
+  font-size: 15px;
+}
+
+button {
+  width: 60px
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+.search-box {
+  margin: 12px 0;
+  display: flex;
+}
+
+.search-box input {
+  border-radius: 30px 10px 10px 30px;
+  padding: 0 18px;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.img {
+  border-radius: 10px 30px 30px 10px;
+  background: white;
+  width: 50px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
