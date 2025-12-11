@@ -6,6 +6,7 @@ const DefaultPage = () => {
   const clubs = clubdata.clubs;
   return (
     <div className="hero">
+      <h1 className='navbar'><u>FOOTBALL PROGNOSTIC APP</u></h1>
       <div className="vs-box">
         <div className="team">
           <img src="" alt="" />
@@ -13,11 +14,13 @@ const DefaultPage = () => {
         <div className="choose-score-box">
           <div className="score">
             <button>+</button>
+            -
             <button>-</button>
           </div>
-          Vs
+          <span className="vs">Vs</span>
           <div className="score">
             <button>+</button>
+            -
             <button>-</button>
           </div>
         </div>
