@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 
 const Overlay = ({ isOpen, onClose, children }) => {
-  // Prevent background scrolling when the overlay is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -17,12 +16,10 @@ const Overlay = ({ isOpen, onClose, children }) => {
 
   return (
     <div style={styles.backdrop} onClick={onClose}>
-      {/* Close Button (Instagram style top-right 'X') */}
       <button style={styles.closeButton} onClick={onClose}>
         &times;
       </button>
 
-      {/* Content Container - stops click propagation so clicking inside doesn't close it */}
       <div style={styles.contentContainer} onClick={(e) => e.stopPropagation()}>
         {children}
       </div>
@@ -37,16 +34,16 @@ const styles = {
     left: 0,
     width: '100vw',
     height: '100vh',
-    backgroundColor: 'rgba(0, 0, 0, 0.65)', // Semi-transparent dark background
+    backgroundColor: 'rgba(0, 0, 0, 0.65)',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    zIndex: 1000, // Ensures it sits on top of the dashboard
+    zIndex: 1000,
   },
   contentContainer: {
     backgroundColor: '#fff',
     borderRadius: '12px',
-    maxWidth: '935px', // Instagram's standard desktop post width
+    maxWidth: '935px',
     width: '90%',
     maxHeight: '90vh',
     display: 'flex',
