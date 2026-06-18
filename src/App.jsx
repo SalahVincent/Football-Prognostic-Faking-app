@@ -1,9 +1,12 @@
 import React from 'react'
 import './App.css'
+import DefaultPage from './page/DefaultPage'
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+    <DefaultPage />
+    </>
   )
 }
 
